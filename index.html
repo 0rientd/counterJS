@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Counter JS</title>
+    <link rel="stylesheet" href="css.css">
+    <script>
+        function increase() {
+            let number = document.getElementById("count").innerHTML;
+            document.getElementById("count").innerHTML = ++number;
+        }
+    
+        function decrease() {
+            let number = document.getElementById("count").innerHTML;
+            if (number != 0) {
+                document.getElementById("count").innerHTML = --number;   
+            }
+        }
+    
+        function reset() {
+            document.getElementById("count").innerHTML = 0;
+        }
+    
+    </script>
+</head>
+<body>
+    <div id="title">
+        COUNTER WITH JAVASCRIPT
+    </div>
+    <div id="main">
+        <div id="count">
+            0
+        </div>
+        <div class="buttons">
+            <button type="button" onclick="decrease()" class="button">DECREASE</button>
+            <button type="button" onclick="reset()" class="button">RESET</button>
+            <button type="button" onclick="increase()" class="button">INCREASE</button>
+        </div>
+    </div>
+</body>
+</html>

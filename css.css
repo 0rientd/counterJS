@@ -1,0 +1,28 @@
+#main {
+    text-align: center;
+    padding-top: 15%;
+}
+
+#title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#count {
+    font-size: 500%;
+    margin-bottom: 5%;
+}
+
+.button {
+    margin: 1%;
+    padding: 1%;
+    font-size: 150%;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        #8b89ff 0px,
+        #8b89ff 20px,
+        #6765ff 20px,
+        #6765ff 40px
+    );
+    box-shadow: 5px 10px #888888;
+}
